@@ -25,8 +25,12 @@ class Index {
 
         //선택창
         Fight fight = new Fight();
+        int fightNum;
         if(actNum == 1) {
-            fight.start();
+            fightNum = fight.start();
+            System.out.println("공격!");
+        } else if(actNum == 2) {
+            System.out.println("도망쳤다!");
         }
     }
 
