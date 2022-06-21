@@ -6,6 +6,6 @@ public class Status {
     }
 
     public int powerStat() {
-        return (int) (Math.random()*11);
+        return (int) (Math.random()*12)+1;
     }
 }
