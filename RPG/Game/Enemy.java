@@ -3,10 +3,10 @@ package RPG.Game;
 public class Enemy {
 
     //적 변수 선언
-    String name;
+    public String name;
     int lv;
     // int exp;
-    int hp;
+    public int hp;
     int maxhp;
     int cost;
     int maxcost;
@@ -15,7 +15,7 @@ public class Enemy {
     int luck;
 
     //적 생성자 선언
-    Enemy (String name, int lv, int hp, int maxhp, int cost, int maxcost, int force, int avoidance, int luck) {
+    public Enemy (String name, int lv, int hp, int maxhp, int cost, int maxcost, int force, int avoidance, int luck) {
         this.name = name;
         this.lv = lv;
         // this.exp = exp;
@@ -29,7 +29,7 @@ public class Enemy {
     }
 
     //공격 메소드
-    void Attack(Character c) {
+    public void Attack(Character c) {
         int damage = force;
         damage = damage <= 0 ? 1 : damage;
         int critical = luck - c.avoidance;

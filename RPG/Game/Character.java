@@ -19,7 +19,7 @@ public class Character {
     int luck;
 
     //캐릭터 생성자 선언
-    Character(String name, int lv, int exp, int hp, int maxhp, int cost, int maxcost, int force, int avoidance, int luck) {
+    public Character(String name, int lv, int exp, int hp, int maxhp, int cost, int maxcost, int force, int avoidance, int luck) {
         this.name = name;
         this.lv = lv;
         this.exp = exp;
@@ -33,7 +33,7 @@ public class Character {
     }
 
     //스테이터스 창
-    void StatusWindow() {
+    public void StatusWindow() {
         System.out.println("===========================================");
         System.out.println("------------------Status-------------------");
         System.out.println("name : " + name);
@@ -48,7 +48,7 @@ public class Character {
     }
 
     //공격 메소드
-    void Attack(Enemy e) {
+    public void Attack(Enemy e) {
         int damage = force;
         damage = damage <= 0 ? 1 : damage;
         int critical = luck - e.avoidance;
@@ -67,7 +67,7 @@ public class Character {
     }
 
     //경험치 획득 메소드
-    void getExp(int exp) {
+    public void getExp(int exp) {
         System.out.println(exp + "의 경험치를 얻었다!");
         this.exp += exp;
         while(100 <= this.exp) {
