@@ -1,4 +1,4 @@
-package design_pattern.structural.decorator;
+package TestFile.decorator;
 
 public interface Component {
     public String make();

@@ -1,4 +1,5 @@
-package design_pattern.structural.decorator;
+package TestFile.decorator;
+
 
 public class Cheese extends Decorator {
     
