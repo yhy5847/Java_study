@@ -7,4 +7,5 @@ public class Drink {
     public String taste;
     public boolean softDrink;
 
+    
 }
