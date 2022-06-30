@@ -1,7 +1,5 @@
-class Burger {
-    String name;
-
-    Burger (String name) {
-        this.name = name;
-    }
+public abstract class Burger {
+    String[] in = {};
+    
+    abstract void time();
 }
