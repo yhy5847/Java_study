@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
+        "TestFile",
         "Hamburger",
-        "TestFile"
+        "Tv"
     ]
 }
