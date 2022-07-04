@@ -1,4 +1,5 @@
 public class SmartTv implements Searchable{
+    
     @Override
     public void changeCh(int numberCh) {
         int avg1 = (chanel[1] - chanel[0])/2;
