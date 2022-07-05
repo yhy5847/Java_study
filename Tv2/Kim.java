@@ -1,4 +1,4 @@
-// import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeUnit;
 import java.util.Scanner;
 import java.util.ArrayList;
 
@@ -9,23 +9,26 @@ public class Kim {
     }
 
     void chLoad() {       
-        Scanner in = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         ArrayList<Integer> chList = new ArrayList<Integer>();
 
         while(true) {
-            if(in.nextInt() == 0000) {
+            System.out.println("입력");
+            System.out.println("입력을 멈추고 싶으시다면 0000 을 입력해주세요.");
+            int input = sc.nextInt();
+            if(input == 0000) {
                 break;
             }else {
-                System.out.println("입력");
-                chList.add(in.nextInt());
+                chList.add(input);
             }
         }
         
         for(int i = 0; i < chList.size(); ++i){
-            System.out.print(chList.get(i) + ", ");
+            TimeUnit.SECONDS.sleep(3);
+            System.out.print(chList.get(i));
+            if(i != chList.size()-1) {
+                System.out.print(", ");
+            }
         }
-        // TimeUnit.SECONDS.sleep(2);
     }
-    
-
 }
