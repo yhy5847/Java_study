@@ -1,2 +1,5 @@
-package CarExample;public class Tire {
+package CarExample;
+
+public interface Tire {
+
 }

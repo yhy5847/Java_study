@@ -1,3 +1,5 @@
+package eat;
+
 public class Strawberry implements Jelly{
 
     @Override

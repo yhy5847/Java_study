@@ -1,2 +1,4 @@
-package CarExample;public class KoreaTire {
+package CarExample;
+
+public class KoreaTire implements Tire{
 }

@@ -1,3 +1,5 @@
+package eat;
+
 public class HumanA implements Human{
 
     void eat() {
