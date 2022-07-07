@@ -1,6 +1,6 @@
 package eat;
 
-public interface Jelly {
+interface Jelly {
     void taste();
 
 }

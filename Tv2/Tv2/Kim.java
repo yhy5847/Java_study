@@ -1,3 +1,5 @@
+package Tv2;
+
 import java.util.concurrent.TimeUnit;
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -8,11 +10,12 @@ public class Kim {
         kim.chLoad();
     }
 
-    void chLoad() {       
+    void chLoad() {
         Scanner sc = new Scanner(System.in);
         ArrayList<Integer> chList = new ArrayList<Integer>();
 
         while(true) {
+
             System.out.println("입력");
             System.out.println("입력을 멈추고 싶으시다면 0000 을 입력해주세요.");
             int input = sc.nextInt();
@@ -24,10 +27,13 @@ public class Kim {
         }
         
         for(int i = 0; i < chList.size(); ++i){
-            TimeUnit.SECONDS.sleep(3);
-            System.out.print(chList.get(i));
-            if(i != chList.size()-1) {
-                System.out.print(", ");
+            try {
+                TimeUnit.SECONDS.sleep(2);
+            }catch(Exception e) {
+                System.out.print(chList.get(i));
+                if (i != chList.size() - 1) {
+                    System.out.print(", ");
+                }
             }
         }
     }
