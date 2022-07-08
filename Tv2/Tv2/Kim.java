@@ -1,14 +1,16 @@
+package Tv2;
+
 import java.util.concurrent.TimeUnit;
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class Kim {
+public class Kim extends Remocon{
     public static void main(String[] args) {
         Kim kim = new Kim();
         kim.chLoad();
     }
 
-    void chLoad() {       
+    void chLoad() {
         Scanner sc = new Scanner(System.in);
         ArrayList<Integer> chList = new ArrayList<Integer>();
 
@@ -24,10 +26,12 @@ public class Kim {
         }
         
         for(int i = 0; i < chList.size(); ++i){
-            TimeUnit.SECONDS.sleep(3);
-            System.out.print(chList.get(i));
-            if(i != chList.size()-1) {
-                System.out.print(", ");
+            try {
+                TimeUnit.SECONDS.sleep(2);
+                System.out.println("2초 지연");
+                System.out.println(chList.get(i));
+            }catch(InterruptedException e) {
+                break;
             }
         }
     }
