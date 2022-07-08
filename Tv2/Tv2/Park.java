@@ -1,5 +1,5 @@
 package Tv2;
 
-public class Park {
+public class Park extends Remocon{
     
 }

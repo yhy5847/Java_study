@@ -1,5 +1,5 @@
 package Tv2;
 
-public class Lee {
+public class Lee extends Remocon{
     
 }
