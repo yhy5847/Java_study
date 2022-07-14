@@ -1,4 +1,4 @@
-package ExpresswayDrive;
+package Expressway.ExpresswayDrive;
 
 public interface Beginner{
 

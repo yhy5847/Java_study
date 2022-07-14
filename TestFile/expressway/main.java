@@ -7,10 +7,10 @@ public class main {
         Driver beg = new Beginner();
         Driver pro = new Proficient();
         Driver exp = new Expert();
-        Drive drive = new Drive();
+//        Drive drive = new Drive();
 
 
-        drive.test(beg, pro, exp);
+//        drive.test(beg, pro, exp);
 
 
 
